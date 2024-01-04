@@ -6,22 +6,22 @@ const port = process.env.PORT || 3000   // dynamically assigns the value of PORT
 // public static path;
 const static_path=(path.join(__dirname, "../public"))
 
+app.set('view engine', 'hbs');
 app.use(express.static(static_path));
-
 
 
 //routing
 app.get("/", (req,res)=>{
-    res.send("welcome to my project")
+    res.render("index")
 })
 app.get("/about", (req,res)=>{
-    res.send("welcome to my about")
+    res.render('about')
 })
 app.get("/weather", (req,res)=>{
-    res.send("weather channel")
+    res.render("weather")
 })
 app.get("*", (req,res)=>{
-    res.send("404 errroe created by me")
+    res.render("404error")
 })
 
 app.listen(port,()=>{
