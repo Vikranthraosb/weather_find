@@ -12,37 +12,15 @@
     rel="stylesheet"
 /></head>
 <body>
-<div class="container-fluid main_menu">
-    <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
 
-            <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="#"><i class="ri-snowy-line snow"></i>  My Weather  <i class="ri-snowy-line snow"></i></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="weather">Weather</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="about">About US</a>
-                      </li>
-                    <li class="nav-item">
-                    </li>
-                  </ul>
-                  
-                </div>
-              </nav>
 
-        </div>
-    </div>
-</div>
+{{>navbar}}
+
+
+
+
+
+
 <div class="container-fluid main_header">
     <div class="row">
         <div class="col-md-10 col-12 mx-auto">
@@ -50,7 +28,7 @@
             <div class="row text-dark">
                 <div class="col-md-6 col-12 main_header_left text-dark">
                     <p class="text-dark">Welcome to weather app</p>
-                    <h1>Get The Latest ,<span class="text-danger">WEATHER</span> Info of your city</h1>
+                    <h1>Get The Latest <span class="text-danger">WEATHER</span> Info of your city</h1>
                     <a href="/weather"><button>Check Now</button></a>
                 </div>
                 <div class="col-md-6 col-12 main_header_right">

@@ -41,7 +41,7 @@ justify-content: space-around;
     padding: 1vh;
 }
 .navbar a:hover{
-    color: rgb(157, 0, 0);
+    color: rgb(20, 0, 170);
 }
 .navbar-toggler{
     background-color: grey;
@@ -107,7 +107,7 @@ text-transform: uppercase;
     text-transform: uppercase;
     }
     .main_header_left button{
-        color: rgb(155, 0, 98);
+        color: rgb(49, 0, 31);
         font-size: 1vw;
         font-weight: 700;
         border-radius: 20px;
@@ -115,11 +115,11 @@ text-transform: uppercase;
 padding: .7vh;
 margin-top: 2vw;
 background-color: rgb(213, 250, 255);
-box-shadow: 4px 4px 40px 10px rgb(145, 211, 226);
+box-shadow: 2px 2px 20px 10px rgb(200, 242, 252);
 }
 .main_header_left button:hover{
     background-color: rgb(174, 246, 255);
-    color: rgb(152, 45, 113);
+    color: rgb(49, 0, 31);
 
 }
 /* footer code */
