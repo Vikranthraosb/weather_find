@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text&family=Piazzolla:opsz@8..30&family=Playfair+Display:ital@1&family=Rajdhani:wght@300;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
-    color: orange
+    font-family: 'Piazzolla', serif;
+    color: rgb(0, 0, 0)
 }
 *::selection{
     color: rgb(0, 209, 0);
@@ -12,5 +14,123 @@
 html , body{
     height: 100%;
     width: 100%;
-    background-color: rgb(84, 0, 84);
+    display: flex;
+    flex-direction: column;
+}
+:root{
+    --main-bg: #1e272e;
+    --main-color:skyblue;
+}
+.main_menu{
+    background-color: rgb(92, 92, 92);
+}
+.navbar{
+    background-color: rgb(92, 92, 92);
+color: green;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-right: 13vw;
+}
+.navbar i{
+    color: rgb(0, 145, 255);
+    padding: 1vh;
+}
+.navbar a:hover{
+    color: rgb(157, 0, 0);
+}
+.navbar-toggler{
+    background-color: grey;
+}
+.snow{
+    transition: all linear ease;
+    animation: colchange 10s linear infinite;
+}
+@keyframes colchange {
+    0%{
+        color: rgb(175, 175, 175);
+    
+    }
+    33%{
+        color: rgb(255, 169, 11);
+    }
+    70%{
+        color: rgb(40, 183, 239);
+    }
+    100%{
+        color: rgb(175, 175, 175);
+
+    }
+    
+}
+/* main header style */
+.row{
+    width: 100vw;
+}
+.main_header_left{
+    width: 50%;
+height:70vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.main_header_right{
+    width: 50%;
+    height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.carousel{
+    height: 70%;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.main_header_left h1{
+color: rgb(0, 0, 0);
+font-size: 3vw;
+font-weight: 700;
+text-transform: uppercase;
+
+}
+.main_header_left p{
+    color: rgb(59, 59, 59);
+    font-size: 2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    }
+    .main_header_left button{
+        color: rgb(155, 0, 98);
+        font-size: 1vw;
+        font-weight: 700;
+        border-radius: 20px;
+        text-transform: uppercase;
+padding: .7vh;
+margin-top: 2vw;
+background-color: rgb(213, 250, 255);
+box-shadow: 10px 8px 6px -6px rgb(145, 211, 226);
+}
+.main_header_left button:hover{
+    background-color: rgb(174, 246, 255);
+    color: rgb(152, 45, 113);
+
+}
+/* footer code */
+footer{
+    margin-top: auto;
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+}
+footer p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2vw;
 }

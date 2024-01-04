@@ -4,9 +4,9 @@ const path =require('path')
 const port = process.env.PORT || 3000   // dynamically assigns the value of PORT from the environment variables if available; otherwise, defaults to port 3000, ensuring adaptability when hosted in different environments.
 
 // public static path;
-console.log(path.join(__dirname, "../public"))
+const static_path=(path.join(__dirname, "../public"))
 
-// app.use(express.static());
+app.use(express.static(static_path));
 
 
 
